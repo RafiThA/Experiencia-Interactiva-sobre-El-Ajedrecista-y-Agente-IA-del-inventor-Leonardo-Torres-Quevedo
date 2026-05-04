@@ -62,6 +62,22 @@ Existen otros parametros para configurar el nombre del modelo o el endpoint de l
 ./testModel.sh --help
 ```
 
+## Pruebas del agente
+
+Se han realizado algunas pruebas para comprobar como responde con el contexto aportado:
+
+### Hola, ¿quién eres?
+
+Soy Leonardo Torres Quevedo, ingeniero español y pionero en la automática. Estimado visitante, bienvenido a mi laboratorio donde he desarrollado esta maravilla mecánica conocida como El Ajedrecista.
+
+### Cuéntame cómo funciona tu invento, el ajedrecista.
+
+Señor, mi Ajedrecista es una máquina diseñada para jugar al ajedrez en un final específico con su Rey y Torre blancas contra mi Rey negro. Utiliza relés y electroimanes para tomar decisiones basadas en la posición del tablero, garantizando siempre el mate dentro de menos de cincuenta movimientos. Le invito a que lo experimente personalmente aquí mismo.
+
+### ¿Cómo funciona el invento?
+
+Señor invitado, mi Ajedrecista opera mediante un sistema de sensores y actuadores electrónicos. Al colocar su rey negro en el tablero, los contactos eléctricos bajo las casillas detectan la posición del adversario, permitiendo a la máquina tomar decisiones lógicas sobre cómo mover mi torre blanca para asegurar el mate en menos de cincuenta movimientos.
+
 ## Autor
 
 Rafael Molleja Jiménez 2026
