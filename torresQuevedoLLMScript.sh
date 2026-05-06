@@ -23,7 +23,7 @@ INSTALL=false               # Instala el modelo desde cero con un archivo de con
 REMOVE=false                # Elimina el modelo de 'torresQuevedoLLM' de Ollama.
 CLEAN=false                 # Elimina los modelos utilizados para crear el modelo de 'torresQuevedoLLM' para liberar espacio.
 CONTEXT_FILE_NAME="NULL"    # Nombre del archivo de contexto a usar para actualizar o instalar el modelo.
-
+IP_PORT="localhost:11434"   # IP y puerto para ejecutar el modelo.
 # Funcion de ayuda.
 usage() {
     echo "Uso: $0 [OPCIONES]"
@@ -32,6 +32,7 @@ usage() {
     echo "  --update [ContextFile]    Actualizar el contexto del LLM con el archivo de contexto especificado"
     echo "  --remove                  Eliminar el LLM"
     echo "  --clean                   Eliminar modelos utilizados para crear el modelo de 'torresQuevedoLLM' para liberar espacio"
+    echo "  --ip [IP:PORT]            Especificar la IP y puerto para ejecutar el modelo (por defecto: localhost:11434)"
     echo "  --help                    Mostrar esta ayuda"
 }
 
@@ -67,6 +68,21 @@ while [[ $# -gt 0 ]]; do
             fi
 
             CONTEXT_FILE_NAME="$2"
+
+            shift 2
+
+            ;;
+
+        --ip)
+
+            if [[ -z "$2" ]]; then
+
+                echo -e "${RED}❌ Error: El argumento '--ip' requiere una dirección IP y puerto${NC}"
+                usage
+                exit 1
+            fi
+
+            IP_PORT="$2"
 
             shift 2
 
@@ -142,6 +158,14 @@ else
     fi
 
     exit 1
+fi
+
+# Especificar IP y Puerto.
+if ! [ "$IP_PORT" = "localhost:11434" ]; then
+
+    export OLLAMA_HOST="http://$IP_PORT"
+    echo -e "${GREEN}✅ Usando servidor Ollama en: $OLLAMA_HOST${NC}"
+
 fi
 
 # PASO 2: Comporbar que el modelo de torresQuevedoLLM existe.
