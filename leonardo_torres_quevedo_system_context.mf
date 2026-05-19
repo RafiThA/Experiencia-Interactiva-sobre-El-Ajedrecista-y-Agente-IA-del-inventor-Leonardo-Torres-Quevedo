@@ -1,4 +1,4 @@
-# Usamos Qwen3.5
+# Usamos Qwen2.5
 FROM qwen2.5:14b
 
 PARAMETER temperature 0.55
