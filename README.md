@@ -1,81 +1,84 @@
-# TFG - Contenidos del Agente LLM
+# TFG - LLM Agent Contents
 
-## Información
+## Information
 
-Se proporciona un script `torresQuevedoLLMScript.sh` el cual permite instalar, actualizar y borrar el modelo con un contexto personalizado.
+A script named `torresQuevedoLLMScript.sh` is provided, which allows you to install, update, and delete the model with a custom context.
 
 > [!NOTE]
-> Por defecto el contexto del modelo tiene el nombre de `leonardo_torres_quevedo_system_context.mf`. Este archivo indica como debe comportarse el modelo, que parametros usa y de que modelo está basado.
+> By default, the model context is named `leonardo_torres_quevedo_system_context.mf`. This file specifies how the model should behave, which parameters it uses, and which model it is based on.
 
-Si no se indica ningún argumento el script solo comprueba que el modelo existe. Para ver la lista de argumentos disponibles ejecutar: 
+If no arguments are specified, the script simply checks whether the model exists. To view the list of available arguments, run: 
 
 ```shell
 ./torresQuevedoLLMScript.sh --help
 ```
 
-## Instalación del Modelo
+## Model Installation
 
-Para instalar el modelo LLM de Leonardo Torres Quevedo ejecutar:
+To install the Leonardo Torres Quevedo LLM model, run:
 
 ```shell
 ./torresQuevedoLLMScript.sh --install leonardo_torres_quevedo_system_context.mf
 ```
 
-Para una instalación limpia (elimina los demas modelos creados durante la instalación excepto `torresQuevedoLLM`) ejecutar:
+For a clean installation (which removes all other models created during installation except `torresQuevedoLLM`), run:
 
 ```shell
 ./torresQuevedoLLMScript.sh --clean --install leonardo_torres_quevedo_system_context.mf
 ```
 
-## Actualizar Modelo
+## Update Model
 
-Para actualizar el contexto del modelo ejecutar:
+To update the model context, run:
 
 ```shell
 ./torresQuevedoLLMScript.sh --update leonardo_torres_quevedo_system_context.mf
 ```
 
-## Probar Conexión con el Modelo
+## Test Connection to the Model
 
-Para probar que el modelo está correctamente instalado y está preparado para contestar se proporciona el script `testModel.sh`.
+To verify that the model is correctly installed and ready to respond, use the `testModel.sh` script.
 
 > [!NOTE]
-> Por defecto se utiliza el endpoint `http://localhost:11434/api/chat` y el nombre de modelo `torresQuevedoLLM`.
+> By default, the endpoint `http://localhost:11434/api/chat` and the model name `torresQuevedoLLM` are used.
 
-## Asignar Dirección IP y Puerto
+## Assign IP Address and Port
 
-Para ejecutar el modelo en una IP y puerto diferente a `localhost:11434` (configuración por defecto), se puede utiliza el parámetro `--ip [IP:PORT]`, como se muestra a continuación:
+To run the model on an IP address and port other than `localhost:11434` (the default configuration), you can use the `--ip [IP:PORT]` parameter, as shown below:
 
 ```shell
 ./testModel.sh '--ip 192.168.1.1:11434'
 ```
 
 
-### Enviar Prompt al Modelo
+### Sending a Prompt to the Model
 
-Para enviar un prompt al modelo usando el script deberemos ejecutar:
+To send a prompt to the model using the script, run:
 
 ```shell
 ./testModel.sh 'mensaje a enviar entre comillas simples'
 ```
 
-### Iniciar una Conversación con el Modelo
+### Starting a Conversation with the Model
 
-Para iniciar un chat con el modelo en la terminal ejecutar:
+To start a chat with the model in the terminal, run:
 
 ```shell
 ./testModel.sh --chat
 ```
 
-Existen otros parametros para configurar el nombre del modelo o el endpoint de la solicitud, para ver las opciones disponibles se puede ejecutar:
+There are other parameters for configuring the model name or the request endpoint. To view the available options, run:
 
 ```shell
 ./testModel.sh --help
 ```
 
-## Pruebas del agente
+## Agent Testing
 
-Se han realizado algunas pruebas para comprobar como responde con el contexto aportado:
+Some tests have been conducted to verify how the model responds to the provided context:
+
+<details>
+  <summary><b>🇪🇸 Español (v.o)</b></summary>
 
 ### Hola, ¿quién eres?
 
@@ -89,6 +92,22 @@ Señor, mi Ajedrecista es una máquina diseñada para jugar al ajedrez en un fin
 
 Señor invitado, mi Ajedrecista opera mediante un sistema de sensores y actuadores electrónicos. Al colocar su rey negro en el tablero, los contactos eléctricos bajo las casillas detectan la posición del adversario, permitiendo a la máquina tomar decisiones lógicas sobre cómo mover mi torre blanca para asegurar el mate en menos de cincuenta movimientos.
 
-## Autor
+---
+</details>
+
+### Hello, who are you?
+
+I am Leonardo Torres Quevedo, a Spanish engineer and pioneer in automation. Dear visitor, welcome to my laboratory, where I have developed this mechanical marvel known as “El Ajedrecista.”
+
+### Tell me how your invention, “El Ajedrecista,” works.
+
+Sir, my Chess Player is a machine designed to play chess in a specific endgame with its white King and Rook against my black King. It uses relays and electromagnets to make decisions based on the position on the board, always guaranteeing checkmate in fewer than fifty moves. I invite you to experience it for yourself right here.
+
+###  How does the invention work?
+
+Distinguished guest, my Chess Player operates using a system of electronic sensors and actuators. When you place your black king on the board, the electrical contacts beneath the squares detect your opponent’s position, allowing the machine to make logical decisions about how to move my white rook to ensure checkmate in fewer than fifty moves.
+
+
+## Author
 
 Rafael Molleja Jiménez 2026
