@@ -4,7 +4,7 @@
 
 Se proporciona un script llamado `torresQuevedoLLMScript.sh`, que permite instalar, actualizar y eliminar el modelo con un contexto personalizado.
 
-> [!NOTA]
+> [!NOTE]
 > Por defecto, el contexto del modelo se denomina `leonardo_torres_quevedo_system_context.mf`. Este archivo especifica cómo debe comportarse el modelo, qué parámetros utiliza y en qué modelo se basa.
 
 Si no se especifican argumentos, el script simplemente comprueba si el modelo existe. Para ver la lista de argumentos disponibles, ejecuta: 
@@ -39,7 +39,7 @@ Para actualizar el contexto del modelo, ejecuta:
 
 To verify that the model is correctly installed and ready to respond, use the `testModel.sh` script.
 
-> [!NOTA]
+> [!NOTE]
 > Por defecto, se utilizan el punto final `http://localhost:11434/api/chat` y el nombre del modelo `torresQuevedoLLM`.
 
 ## Asignar dirección IP y puerto
