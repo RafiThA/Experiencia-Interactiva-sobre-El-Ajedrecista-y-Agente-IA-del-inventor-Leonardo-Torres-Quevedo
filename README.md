@@ -16,7 +16,7 @@ La aplicación consiste en la recreación, mediante realidad mixta para Meta Que
 
 - 🖐️ Interfaces virtuales interactivas adaptadas al seguimiento de manos.
 
-## Información
+## Modelo LLM
 
 Se proporciona un script llamado `torresQuevedoLLMScript.sh`, que permite instalar, actualizar y eliminar el modelo con un contexto personalizado.
 
