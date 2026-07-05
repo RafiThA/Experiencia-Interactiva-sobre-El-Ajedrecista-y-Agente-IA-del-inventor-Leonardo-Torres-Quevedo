@@ -1,5 +1,21 @@
 # TFG - Experiencia Interactiva sobre "El Ajedrecista" y Agente IA del inventor Leonardo Torres Quevedo
 
+## Sobre el proyecto
+
+Este proyecto ha sido desarrollado como Trabajo de Fin de Grado del Grado en Ingeniería Informática, mención en Computación.
+
+La aplicación consiste en la recreación, mediante realidad mixta para Meta Quest, del histórico autómata "El Ajedrecista", diseñado por el ingeniero e inventor Leonardo Torres Quevedo. Además, incorpora un agente de inteligencia artificial basado en un modelo de lenguaje (LLM) con un contexto personalizado sobre la vida, obra y aportaciones de Leonardo Torres Quevedo, permitiendo a los usuarios interactuar con él de forma conversacional.
+
+### Características
+
+- ✋ Interacción mediante seguimiento de manos.
+
+- ♟️ Recreación de la lógica original de "El Ajedrecista".
+
+- 🤖 Agente de IA basado en LLM con comunicación por voz.[^1]
+
+- 🖐️ Interfaces virtuales interactivas adaptadas al seguimiento de manos.
+
 ## Información
 
 Se proporciona un script llamado `torresQuevedoLLMScript.sh`, que permite instalar, actualizar y eliminar el modelo con un contexto personalizado.
@@ -92,3 +108,5 @@ Señor invitado, mi Ajedrecista opera mediante un sistema de sensores y actuador
 ## Autor
 
 Rafael Molleja Jiménez - 2026
+
+[^1]: En la versión 1.0.0 de la experiencia no se incluyen las funcionalidades de reconocimiento ni de síntesis de voz, debido a su dependencia de servicios externos.
