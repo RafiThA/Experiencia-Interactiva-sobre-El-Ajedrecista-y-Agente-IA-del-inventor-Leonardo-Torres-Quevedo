@@ -77,20 +77,20 @@ Al hacer clic, se desplegará un explorador de archivos nativo en el ordenador q
 Para iniciar y ejecutar la simulación en el entorno real, el usuario deberá navegar dentro del menú principal del visor hacia la biblioteca de aplicaciones.
 
 <div align="center">
-    <img src="assets/biblioteca-app.png" alt="App Library" width="90%">
+    <img src="assets/biblioteca-app.png" alt="App Library" width="70%">
 </div>
 
 Dado que el software ha sido instalado de manera externa, no figurará de forma directa en el catálogo comercial, por lo que se debe desplegar el menú de filtros (situado en la parte superior derecha de la biblioteca) y seleccionar la categoría denominada **“Orígenes
 desconocidos”**.
 
 <div align="center">
-    <img src="assets/origenes-desconocidos.png" alt="App Library" width="90%">
+    <img src="assets/origenes-desconocidos.png" alt="App Library" width="70%">
 </div>
 
 Por último, para iniciar la experiencia interactiva de "El Ajedrecista", bastará con realizar una pulsación sobre el nombre del proyecto alojado en el listado.
 
 <div align="center">
-    <img src="assets/application.png" alt="App Library" width="90%">
+    <img src="assets/application.png" alt="App Library" width="70%">
 </div>
 
 La aplicación aparecerá en la barra de aplicaciones del visor una vez ejecutada una vez, para iniciar desde la barra de aplicaciones la experiencia se deberá pulsar en el icono de la aplicación.
